@@ -1,0 +1,658 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+* {
+    box-sizing: border-box; /* Box takes padding and border thickness into account when sizing*/
+    font-family: Raleway;
+    color: rgb(37, 37, 37);
+}
+
+
+/* Remove dafault margins of html and body elements*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove Top Margin in Heading*/
+.nav ul {
+    margin: 0;
+}
+
+/* Header Links*/
+.nav li {
+    display: inline;
+}
+
+/*Styling navigation bar on top of webpage*/
+.nav a {
+    display: inline-block;
+    padding: 1em 0;
+    color: white;
+    text-decoration: none;
+}
+
+/*Specific only to main navigation bar*/
+.main-nav {
+    text-align: center;
+    font-size: 2em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    padding-right: 4.2em;
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255,255,255,.3);
+}
+
+.nav-footer {
+    /*border: 1px solid red;*/
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-footer-btn {
+    background-color: rgba(255,255,255,.1);
+    color: white;
+    border:1px solid rgba(255,255,255,.5);
+    font-size: 1.5em;
+    font-family: Raleway;
+    font-weight: normal;
+    width: 250px;
+    height: 50px;
+}
+
+.nav-footer-btn a {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.nav-footer-btn:hover {
+    background-color:rgba(255,255,255,.3);
+    cursor: pointer;
+}
+
+/* Main Heading of webpage*/
+.main-header {
+    background-color: rgba(0,0,0,.7);
+    background-image:url("Homepage Images/Background\ Image.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.home-header {
+    padding-bottom: 20px;
+}
+
+/*Title*/
+.title-name {
+    color: rgba(255,255,255,.9);
+    font-family: Chalkduster;
+    font-size: 2em;
+}
+ .title-name-large {
+    text-align: center;
+    font-size: 10em;
+    font-family: Chalkduster;
+}
+
+ /* Content Section */
+ .content-section {
+    margin: 2em;
+    font-size: 20px;
+    border: 1px dashed white;  /* prevents footer from moving while hover*/
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    display: block;
+}
+
+ .section-header {
+    font-family: Arial;
+    color: rgb(0,90,0);
+    text-align: center;
+    font-size: 3em;
+}
+
+.welcome-pic {
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.welcome-intro {
+    display: flex;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.welcome-desc {
+    max-width: 1050px;
+    text-align: left;
+}
+
+.logo-pic {
+    margin: auto 0;
+    border-radius: 50%;
+    width: 650px;
+    height: 650px;
+}
+
+.intro-content {
+    margin: auto;
+}
+
+/* Schedule */
+
+.example-img {
+    width: 1000px;
+    height: 800px;
+    background-color:rgba(0, 0, 0,.9);
+    color: rgba(255,255,255,.7);
+    font-size: 5em;
+    text-align:center;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+
+ /* Tracks Section (Home) */
+ .tracks {
+    display:flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+
+ .trackbox {
+     padding: 20px;
+     text-align: center;
+ }
+
+ .track-pic {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    transition: all 0.3s cubic-bezier(.58,.01,.23,1.78);
+ }
+
+ .track-pic:hover {
+    transform: scale(1.17);
+ }
+
+ .track-title {
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin: 10px 0;
+ }
+
+.container-tracks {
+   max-height: 700px;
+   margin-bottom: 30px;
+}
+
+/* Footer */
+.main-footer {
+    background-color: rgba(0,0,0,.7);
+    background-image:url("Homepage Images/Background\ Image.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding: 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: right;
+    text-decoration-color: white;
+}
+
+.footer-nav li{
+    padding: 0 .5em;
+    color: white;
+}
+
+/****** Eval Page *****/
+
+/* Buttons */
+
+.desc-box {
+    max-width: 1400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 45%;
+    background-color: rgb(0,90,0);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgba(0, 128, 0,.8);
+}
+
+/* Rows */
+.row {
+    max-width: 1600px;
+    min-width: 950px;
+    margin: 0 auto;
+    border-bottom: 1px solid gray;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.eval-row:last-child {
+    border-bottom:none;
+}
+
+/* Row Items */
+
+.row-item {
+    display: inline-block;
+    font-size: 1.25em;
+}
+
+.eval-day {
+    font-weight: bold;
+    font-size: 1.75em;
+    width: 15%;
+}
+
+.eval-date {
+    width: 24%;
+}
+
+.eval-events {
+    width: 49%;
+}
+
+.eval-btn {
+    max-width: 10%
+}
+
+.eval-desc {
+    padding-left: 90px;
+}
+
+/***** Intro Skit Page *****/
+
+.video {
+    text-align: center;
+    padding: 2em;
+    width: 1350px;
+    background-color: rgba(0,0,0,.8);
+    background-image:url("Homepage Images/Background\ Image.jpg");
+    background-blend-mode:multiply;
+    background-size: cover;
+}
+
+.video-small {
+    width: 1050px;
+}
+
+.video-xtra-small {
+    width: 800px;
+    padding: 1em;
+}
+
+/***** Sample Shope Page *****/
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title{
+    display:block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.shop-item {
+    height: 250px;
+}
+
+.shope-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+}
+
+.shop-item-button {
+    border-radius: 10%;
+    font-size: .5em;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25 em;
+    color: black;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10%;
+}
+
+.btn-danger {
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: .8em;
+    margin-left: 1em;
+}
+
+.btn-danger:hover {
+    background-color: rgb(153, 8, 8);
+    cursor: pointer;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(0,90,0);
+    background-color: rgb(219, 219, 219);
+    font-size: 1.2em;
+    padding: 0;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.cart-row:last-child .cart-column {
+    border-bottom: none;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    font-size: 1.3em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 40px auto;
+}
+
+/***** Meet the Leaders Page *****/
+
+.leaders-person {
+    height: 450px;
+    width: 350px;
+    padding: 1em 0;
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 1em 2em 2em 1em;
+}
+
+/*** Coin Flip Code ***/
+.coin-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.coin {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.coin:hover {
+    transform:rotateY(180deg);
+}
+
+.pic-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.pic-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: rgba(0,0,0,.7);
+    transform: rotateY(180deg);
+    border-radius: 50%;
+    padding: 4.5em 1.5em 2.5em 1.5em;
+}
+/**********************/
+
+
+.leaders-pic {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: .1px solid rgba(0,90,0,.7);
+}
+
+.leaders-name {
+    display: block;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.leaders-description {
+    align-items: center;
+    padding: 5px;
+    font-size: .9em;
+    color: rgb(240, 240, 240);
+}
+
+.leaders-hometown {
+    font-size: 1em;
+}
+
+.leaders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/***** Morning Prayer Page *****/
+
+.inline-vid {
+    padding: 0 3em;
+    margin-bottom: 50px;
+}
+
+.inline-vid div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em 0;
+}
+
+.inline-vid-video {
+    height: 475px;
+    margin-bottom: 20px;
+}
+
+.vid-desc {
+    padding: 0;
+    width: 600px;
+    height: 300px;
+    margin: auto 0;
+}
+
+.content-header {
+    font-size: 2.8em;
+    text-align: center;
+    font-weight: bolder;
+    color: darkgreen;
+}
+
+.inline-vid-left {
+    text-align: left;
+}
+
+.inline-vid-right {
+    text-align: right;
+}
+
+.inline-vid-center {
+    text-align: center;
+    border-bottom: 3px solid gray;
+}
+
+.inline-vid-center:last-child {
+    border:none;
+}
+
+hr {
+    width: 700px;
+    color: gray;
+    margin-top: 100px;
+}
+
+
+/***** Live Session Page *****/
+
+.row-heading {
+    font-size: 1.5em;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+}
+
+.row-heading span {
+    color: rgb(0,90,0);
+}
+
+.event-status {
+    width: 15%;
+    font-weight: bold;
+}
+
+.event-date {
+    width: 12%;
+}
+
+.event-time {
+    width: 25%;
+}
+
+.event-title {
+    font-weight: bolder;
+    width: 30%;
+}
+
+.event-btn {
+    width: 13%;
+}
+
+/*** Status Marks ***/
+
+.ongoing {
+    background-color: rgba(255,255,0,.3);
+}
+
+.ongoing .event-status{
+    color: darkred;
+    font-weight: bolder;
+}
+
+.completed span {
+    color: darkslateblue;
+    font-weight:normal;
+}
+
+.completed button {
+    visibility:hidden;
+}
+
+/*********************/
