@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import "animations.css";
 
 * {
     box-sizing: border-box; /* Box takes padding and border thickness into account when sizing*/
@@ -12,7 +13,9 @@
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
+
 
 /* Remove Top Margin in Heading*/
 .nav ul {
@@ -82,6 +85,7 @@ html, body {
 }
 
 /* Main Heading of webpage*/
+
 .main-header {
     background-color: rgba(0,0,0,.7);
     background-image:url("Homepage Images/Background\ Image.jpg");
@@ -117,7 +121,6 @@ html, body {
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 1.5em;
-    display: block;
 }
 
  .section-header {
@@ -127,16 +130,14 @@ html, body {
     font-size: 2.8em;
 }
 
-.welcome-pic {
-    margin: 12px;
-    max-width: 100px;
-    border-radius: 50%;
-}
+
 
 .welcome-intro {
     display: flex;
     text-align: center;
     margin-bottom: 0px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .welcome-desc {
@@ -147,19 +148,17 @@ html, body {
 .logo-pic {
     margin: auto 0;
     border-radius: 50%;
-    width: 650px;
-    height: 650px;
-}
-
-.intro-content {
-    margin: auto;
+    max-width: 600px;
+    max-height: 600px;
+    min-width: 400px;
+    min-height: 400px;
 }
 
 /* Schedule */
 
 .example-img {
-    width: 800px;
-    height: 640px;
+    max-width: 800px;
+    max-height: 640px;
     background-color:rgba(0, 0, 0,.9);
     color: rgba(255,255,255,.7);
     font-size: 5em;
@@ -203,6 +202,7 @@ html, body {
 .container-tracks {
    max-height: 700px;
    margin-bottom: 30px;
+   position: relative;
 }
 
 /* Footer */
@@ -212,6 +212,7 @@ html, body {
     background-blend-mode: multiply;
     background-size: cover;
     padding: 0;
+
 }
 
 .main-footer-container {
@@ -307,20 +308,32 @@ html, body {
 .video {
     text-align: center;
     padding: 2em;
-    width: 1090px;
+    width: 80%;
+    max-width: 1090px;
+    height: 80vh;
+    max-height: 600px;
     background-color: rgba(0,0,0,.8);
     background-image:url("Homepage Images/Background\ Image.jpg");
     background-blend-mode:multiply;
     background-size: cover;
+    opacity: 0;
+    animation: vid-fade .8s ease-out 100ms forwards;
 }
 
 .video-small {
-    width: 840px;
+    max-width: 840px;
+    height: 500px;
 }
 
 .video-xtra-small {
     max-width: 640px;
+    height: 435px;
     padding: 1em;
+}
+
+.vidbox {
+    width: 100%;
+    height: 100%;
 }
 
 /***** Sample Shope Page *****/
@@ -659,3 +672,24 @@ hr {
 }
 
 /*********************/
+
+
+/***** Kids Track *****/
+
+
+
+
+
+/***** Preteens Track*****/
+
+
+
+
+
+/***** HS Track *****/
+
+
+
+
+
+
